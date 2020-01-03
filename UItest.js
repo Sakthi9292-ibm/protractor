@@ -1,26 +1,6 @@
-describe('angularjs homepage todo list', function() {
-  it('should add a todo', function() {
-	  browser.waitForAngularEnabled(false);
-    browser.get('https://www.google.com/');
-   
-    
-    browser.takeScreenshot().then(function (png) {
-   //     var stream = fs.createWriteStream('./screenshot.png');
-     //   stream.write(new Buffer(png, 'base64'));
-       // stream.end();
-    })
-
-   // element(by.model('todoList.todoText')).sendKeys('write first protractor test');
-   // element(by.css('[value="add"]')).click();
-
-    //var todoList = element.all(by.repeater('todo in todoList.todos'));
-    //expect(todoList.count()).toEqual(3);
-    //expect(todoList.get(2).getText()).toEqual('write first protractor test');
-
-    // You wrote your first test, cross it off the list
-   // todoList.get(2).element(by.css('input')).click();
-    //var completedAmount = element.all(by.css('.done-true'));
-    //expect(completedAmount.count()).toEqual(2);
+describe('angularjs homepage', function() {
+  it('should have a title', function() {
+    browser.get('http://angularjs.org/');
+    expect(browser.getTitle()).toContain('AngularJS');
   });
 });
-
