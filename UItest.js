@@ -1,6 +1,6 @@
-describe('angularjs homepage', function() {
+describe('homepage', function() {
   it('should have a title', function() {
-    browser.get('http://angularjs.org/');
+    browser.get('https://www.google.com/');
     expect(browser.getTitle()).toContain('AngularJS');
   });
 });
