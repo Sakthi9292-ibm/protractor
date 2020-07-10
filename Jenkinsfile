@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Protractor Build') {
             steps {
-                sh 'protractor config.js' 
+                bat 'protractor config.js' 
                
             }
         }
